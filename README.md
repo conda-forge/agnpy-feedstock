@@ -5,9 +5,13 @@ Home: https://github.com/cosimoNigro/agnpy
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/agnpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Modelling jetted Active Galactic Nuclei radiative processes with python
+
+Development: https://github.com/cosimoNigro/agnpy
+
+Documentation: https://agnpy.readthedocs.io/
 
 agnpy focuses on the numerical computation of the photon spectra produced
 by leptonic radiative processes in jetted Active Galactic Nuclei (AGN).
