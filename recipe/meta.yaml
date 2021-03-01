@@ -1,5 +1,5 @@
 {% set name = "agnpy" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21888172a2e472b94eaa3cd80ff81c9641bf62aba7cf7df2d068e8ef5076528a
+  sha256: 14b03c545cb9e93c78c73911b1cedc5a1a947a2712a5615fda16052318f07524
 
 build:
   number: 0
