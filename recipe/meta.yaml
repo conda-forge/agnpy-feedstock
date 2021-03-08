@@ -19,11 +19,11 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - astropy
+    - astropy >=4
     - matplotlib-base
-    - numpy
+    - numpy >=1.17
     - python >=3.6
-    - scipy
+    - scipy >=1.2
 
 test:
   imports:
