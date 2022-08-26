@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - astropy >=4
     - matplotlib-base
     - numpy >=1.17
-    - python >=3.6
+    - python >=3.8
     - scipy >=1.2
 
 test:
