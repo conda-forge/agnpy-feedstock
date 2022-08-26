@@ -1,5 +1,5 @@
 {% set name = "agnpy" %}
-{% set version = "0.1.8" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 44937cac40df3bb349c752fbed35b1f66a097047450c659b39836b27b0ed174c
+  sha256: 9e73ab7ede7c1eb54d1981a3d852fa3739e4265db3d190d08432510e644c37dd
 
 build:
   number: 0
@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - astropy >=4
     - matplotlib-base
     - numpy >=1.17
-    - python >=3.6
+    - python >=3.8
     - scipy >=1.2
 
 test:
