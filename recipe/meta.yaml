@@ -6,26 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 75ae0e2021a025c3d135a1c07b8c01964d8b708f714c2eb57860e1fbc7392509
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - astropy >=4
     - matplotlib-base
     - numpy >=1.17
-    - python >=3.8
+    - python >={{ python_min }}
     - scipy >=1.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - agnpy
 
