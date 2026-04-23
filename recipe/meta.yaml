@@ -1,13 +1,13 @@
 {% set name = "agnpy" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 75ae0e2021a025c3d135a1c07b8c01964d8b708f714c2eb57860e1fbc7392509
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2bac658cb99422ff7e0563818c8bb2f0ca073482f16f08f4a939e2c7bc61bcae
 
 build:
   number: 0
